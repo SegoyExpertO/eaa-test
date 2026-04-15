@@ -1,0 +1,24 @@
+{
+  "id": "html-xml-lang-mismatch",
+  "impact": "moderate",
+  "selector": "html[lang][xml\\:lang]:not(html *)",
+  "matches": "xml-lang-mismatch-matches",
+  "tags": [
+    "cat.language",
+    "wcag2a",
+    "wcag311",
+    "EN-301-549",
+    "EN-9.3.1.1",
+    "ACT",
+    "RGAAv4",
+    "RGAA-8.3.1"
+  ],
+  "actIds": ["5b7ae0"],
+  "metadata": {
+    "description": "Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page",
+    "help": "HTML elements with lang and xml:lang must have the same base language"
+  },
+  "all": ["xml-lang-mismatch"],
+  "any": [],
+  "none": []
+}

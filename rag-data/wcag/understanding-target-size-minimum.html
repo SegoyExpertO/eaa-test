@@ -1,0 +1,634 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Understanding Success Criterion 2.5.8: Target Size (Minimum) | WAI | W3C</title>
+    
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css">
+
+  <link rel="stylesheet" href="base.css">
+
+
+
+</head>
+<body dir="ltr">
+
+<a href="#main" class="button button--skip-link">Skip to content</a>
+<div class="minimal-header-container default-grid">
+  <header id="site-header" class="minimal-header">
+    <div class="minimal-header-info">
+      <div class="minimal-header-title">
+        <a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding Docs</a>
+      </div>
+      
+      <p class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</p>
+      
+      <div class="minimal-header-link">
+        <a href="https://www.w3.org/WAI/WCAG22/Understanding/about">About WCAG Understanding Docs</a>
+      </div>
+    </div>
+    <div class="minimal-header-logo">
+      <div class="logos">
+        <a lang="en" class="home w3c" href="https://www.w3.org/">
+          <svg role="img" width="46" height="46" version="1.1" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" aria-labelledby="w3c-homepage-title"><title id="w3c-homepage-title">W3C homepage</title><g><path d="M306.80028,149.60422c-6.57831-5.22164-16.18258-4.11126-21.40437,2.46705-6.46763,8.15442-12.34209,13.06271-19.03895,15.91953-12.3507,5.25562-22.8198,3.03441-32.94112-6.99345-9.91806-9.82474-19.58153-20.53078-28.95701-30.90671-4.58604-5.07758-9.18023-10.16361-13.83407-15.19045-7.95131-8.58691-15.94475-17.14014-23.93018-25.70183l-.70385-.7546c-17.36893-18.58955-35.32287-37.81514-52.64105-57.12546-13.73244-15.31775-34.95002-22.90466-55.36241-19.83598-20.86179,3.11957-37.73072,16.47071-47.50442,37.58651-9.41762,20.33598-6.23039,43.44391,8.30724,60.30423,25.57483,29.66072,47.14864,54.18407,72.41783,77.24986,10.33349,9.42608,22.83701,14.44431,36.15387,14.51211,8.6381.04258,21.65838-.93219,34.94171-9.87548,5.81526-3.91601,11.23186-7.94285,13.6139-14.08852,2.42447-6.28959.16098-13.52028-5.51838-17.59771-5.51007-3.9672-12.74075-3.68767-17.99637.67804-.66142.55074-1.38204,1.18679-2.17002,1.87358-8.2565,7.23069-18.53079,16.23288-39.47715,1.1948-19.19132-13.78333-34.05106-31.84751-51.26776-52.7682-5.6117-6.8157-11.41836-13.86835-17.62338-21.07381-6.62906-7.68825-8.06169-18.26729-3.73841-27.61741,3.77239-8.13766,11.05382-18.25913,24.37958-20.25096,10.09566-1.51765,21.41238,2.5172,28.16859,10.04507,17.4624,19.47975,35.55195,38.85772,53.04802,57.58302,8.1973,8.77371,16.39415,17.55557,24.54902,26.36326,4.56927,4.93366,9.0789,9.92608,13.65633,14.99535,9.61287,10.63868,19.54755,21.63315,30.04203,32.0343,18.94578,18.7759,42.49435,23.53152,66.33996,13.38482,11.45233-4.89123,21.29399-12.83408,30.95745-25.01519,5.21304-6.56941,4.11126-16.16552-2.46661-21.39577Z" id="path1"></path><path d="M330.6361,64.98331c9.85011-4.6709,17.59815-13.46152,18.33554-24.12543,1.87344-18.51314-13.36805-36.22984-35.78948-38.96811-13.76627-1.74599-26.541,2.33145-35.59408,9.83349-4.84019,4.02639-6.14582,11.4777-1.94984,16.73332,4.58589,5.46749,9.87548,6.42505,18.53064,1.67002,3.10236-1.7632,7.76481-3.22981,12.89328-2.87403,9.67207.67003,12.44387,9.38409,12.17266,13.34268-.04258.58501.01706,14.07992-13.60529,13.13912l-5.13707-.35579c-5.72179-.39021-11.44387,4.95888-11.86746,11.07889-.45801,6.51066,4.30622,12.19832,10.23127,12.6139l6.31526.43219c17.37798,1.20385,15.56374,15.95335,15.19935,18.31017-.33902,6.78143-11.22355,18.28435-30.6355,5.20443-6.58662-4.43322-53.56538-63.44072-53.56538-63.44072-22.26001-28.77883-60.0839-33.84809-89.93097-12.0455-3.2804,2.3988-5.44226,5.93366-6.06941,9.9605-.61884,4.01779.35593,8.04448,2.75503,11.32488,2.3988,3.2804,5.93381,5.44226,9.95189,6.06941,4.04316.62745,8.05279-.35593,11.33349-2.75503,20.36135-14.87665,38.51024-6.01022,47.84315,6.06111,0,0,50.43765,64.87335,63.4241,71.74796,8.42608,4.45903,17.22516,7.03588,26.168,7.65487,27.44827,1.89866,44.16438-13.22414,48.67445-33.94142,2.958-13.57992-5.82387-30.55048-19.68361-36.67093Z" id="path2"></path></g><g><path d="M7.65638,245.62164h18.68735c1.9807,0,3.61006.4556,4.88419,1.35908s2.13515,2.09267,2.59075,3.56759l16.64873,65.1509c.96139,3.3977,1.86874,7.33594,2.71816,11.80701.45174-2.20851.90348-4.31662,1.35908-6.33208.45174-2.00773.98842-3.86102,1.61391-5.55987l19.70666-65.06596c.45174-1.30503,1.32819-2.44789,2.63322-3.44403,1.30116-.98842,2.85716-1.48263,4.67184-1.48263h6.54057c1.9807,0,3.57917.44016,4.79925,1.31275,1.21622.88031,2.08109,2.08495,2.59075,3.61392l19.70666,65.1509c.56371,1.6448,1.08881,3.43631,1.57144,5.39771.47877,1.94596.94595,4.00002,1.40155,6.15447.39382-2.15445.80695-4.19307,1.23167-6.11586s.86101-3.70658,1.31661-5.35138l16.64873-65.23585c.39382-1.30503,1.25869-2.44789,2.59075-3.44403,1.32819-.98842,2.89963-1.48263,4.71431-1.48263h17.49816l-33.46735,112.80365h-20.21632l-22.33988-75.00423c-.33977-.96526-.66796-2.03862-.97684-3.22782-.31274-1.1892-.61004-2.43244-.8919-3.73747-.28572,1.30503-.5946,2.54828-.93437,3.73747s-.65251,2.26256-.93437,3.22782l-22.76459,75.00423h-20.13137L7.65638,245.62164Z" id="path3"></path><path d="M212.19794,244.34751c5.20852,0,9.8958.76448,14.05798,2.29345,4.16218,1.52897,7.6873,3.61392,10.57534,6.23941,2.88805,2.64094,5.10813,5.72204,6.66799,9.26646,1.55599,3.5367,2.33592,7.31278,2.33592,11.33596,0,3.56759-.38224,6.71046-1.14672,9.42862s-1.88418,5.09655-3.35523,7.13517c-1.47491,2.03862-3.28573,3.76836-5.43632,5.18149-2.15445,1.41313-4.5869,2.57916-7.30506,3.48264,12.85335,4.36296,19.28195,13.05026,19.28195,26.07735,0,5.72204-1.03475,10.74909-3.1004,15.07343-2.06951,4.33979-4.84172,7.97687-8.32437,10.91897s-7.53286,5.1506-12.14678,6.62552c-4.61778,1.47491-9.47109,2.20851-14.56764,2.20851-5.38227,0-10.1236-.62549-14.22787-1.86874-4.10813-1.24325-7.70274-3.12743-10.7877-5.65254-3.08882-2.51739-5.74906-5.64482-7.9846-9.38229-2.23939-3.73747-4.1506-8.06954-5.73362-12.9962l9.00391-3.82241c2.37839-.96526,4.59848-1.20464,6.66799-.71815,2.06565.47877,3.52511,1.59846,4.37454,3.35137,1.01931,1.92279,2.09267,3.72203,3.22782,5.38999,1.13128,1.67568,2.42086,3.15059,3.86488,4.41701,1.44402,1.28186,3.1004,2.28573,4.96914,3.01932s4.01932,1.10425,6.45563,1.10425c3.00001,0,5.61779-.49421,7.85718-1.48263,2.23553-.99614,4.08882-2.30117,5.56373-3.90736,1.47105-1.62163,2.5753-3.44403,3.31276-5.48265.73359-2.03862,1.10425-4.07724,1.10425-6.11586,0-2.60233-.24324-4.98072-.72201-7.13517-.48263-2.15445-1.55985-3.9923-3.22782-5.52126-1.67182-1.52897-4.11971-2.71816-7.34753-3.56759s-7.6178-1.27414-13.16609-1.27414v-14.52517c4.64095-.05405,8.45178-.47877,11.42477-1.27414s5.30891-1.91507,7.00776-3.35137c1.69885-1.45174,2.85716-3.15832,3.48264-5.14288.62162-1.98457.93437-4.19307.93437-6.62552,0-5.1506-1.28958-9.03479-3.86488-11.63712-2.57916-2.60233-6.18922-3.90736-10.83017-3.90736-4.13516,0-7.59077,1.15831-10.36299,3.48264-2.77608,2.32434-4.70273,5.18149-5.77609,8.57919-.90734,2.60233-2.11198,4.30118-3.61006,5.09655-1.50194.79537-3.64094.96526-6.41316.50966l-10.7877-1.86874c.79151-5.49037,2.29345-10.29349,4.50195-14.40162,2.20851-4.10041,4.98072-7.52899,8.32437-10.27032,3.33978-2.74905,7.14675-4.81856,11.42477-6.20853,4.27415-1.38225,8.87649-2.07723,13.80316-2.07723Z" id="path4"></path><path d="M335.38002,331.07381c1.1892,0,2.20851.4556,3.05793,1.35908l8.91896,9.5985c-4.07724,5.72204-9.18923,10.07727-15.33212,13.08115-6.14675,3.00388-13.43636,4.50195-21.8727,4.50195-7.64483,0-14.52517-1.42858-20.64103-4.29346-6.11586-2.85716-11.3128-6.84945-15.58695-11.96917-4.27801-5.12744-7.55988-11.21241-9.85333-18.27036-2.29345-7.04251-3.44017-14.76455-3.44017-23.14297,0-8.4402,1.23167-16.17769,3.695-23.23564,2.46333-7.04251,5.93053-13.11976,10.40546-18.21631,4.47106-5.09655,9.82244-9.05796,16.05413-11.89195,6.22783-2.83399,13.08115-4.24713,20.55609-4.24713,7.58691,0,14.29737,1.34364,20.13137,4.03863,5.83014,2.68727,10.70276,6.23941,14.61011,10.65642l-7.47494,10.44793c-.50966.62549-1.09267,1.1892-1.74132,1.69885-.65251.50966-1.57144.76448-2.76063.76448s-2.33592-.4556-3.44017-1.35908-2.46333-1.89962-4.07724-2.97299-3.64094-2.06951-6.07339-2.97299c-2.43631-.90348-5.55215-1.35908-9.34368-1.35908-4.13516,0-7.89965.86487-11.29735,2.59461-3.3977,1.72202-6.31663,4.24713-8.74908,7.55216-2.43631,3.32048-4.32048,7.36683-5.64868,12.1545-1.33205,4.77995-1.99615,10.23171-1.99615,16.34757,0,6.16991.73359,11.66801,2.20851,16.47885,1.47105,4.81083,3.4672,8.87263,5.98845,12.19311,2.51739,3.30504,5.47879,5.83014,8.87649,7.55216,3.3977,1.72974,7.05023,2.59461,10.95758,2.59461,2.32047,0,4.41701-.12355,6.28575-.3861,1.86874-.24711,3.61006-.70271,5.22396-1.35908,1.61391-.64865,3.12743-1.48263,4.54442-2.50194,1.41313-1.01931,2.83013-2.29345,4.24713-3.82241.56371-.4556,1.14672-.83398,1.74132-1.15058.5946-.30888,1.20078-.46332,1.82626-.46332Z" id="path5"></path></g></svg>
+        </a>
+        <a lang="en" class="home wai" href="https://www.w3.org/WAI/">
+          <svg role="img" width="162.5" height="45.9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.5 45.9" aria-labelledby="wai-homepage-title"><title id="wai-homepage-title">Web Accessibility Initiative (WAI) homepage</title><g><path d="M1.2 24.5h160" stroke="#eed009" stroke-linecap="square" stroke-width="2"></path><g><path d="M15.741 15.5h-1.816L11.14 6.145c-.41-1.394-.65-2.334-.722-2.823-.104.749-.332 1.71-.684 2.881L7.04 15.5H5.223L1.444 1.223H3.32l2.217 8.72c.3 1.14.527 2.272.684 3.399.143-1.068.397-2.237.761-3.506l2.52-8.613h1.855l2.627 8.681c.339 1.127.6 2.272.781 3.438.105-.899.336-2.038.694-3.418l2.207-8.701h1.875zm10.127.195c-1.608 0-2.87-.486-3.784-1.46-.915-.973-1.372-2.312-1.372-4.018 0-1.719.426-3.088 1.279-4.107.853-1.019 2.005-1.528 3.457-1.528 1.348 0 2.422.435 3.223 1.304.8.869 1.2 2.046 1.2 3.53v1.064h-7.343c.033 1.218.342 2.142.928 2.774.586.631 1.416.947 2.49.947a8.46 8.46 0 001.631-.151c.514-.101 1.116-.298 1.807-.591v1.543a8.506 8.506 0 01-1.67.537c-.521.104-1.136.156-1.846.156zm-.44-9.677c-.84 0-1.503.27-1.992.81-.488.54-.778 1.292-.869 2.256h5.46c-.014-1.003-.245-1.764-.694-2.285-.45-.521-1.084-.781-1.904-.781zm12.237-1.416c1.413 0 2.503.486 3.271 1.46.769.973 1.153 2.332 1.153 4.077 0 1.77-.39 3.14-1.172 4.106-.781.967-1.865 1.45-3.252 1.45-.723 0-1.367-.13-1.934-.39a3.384 3.384 0 01-1.386-1.162h-.137a48.165 48.165 0 01-.362 1.357h-1.26V.305h1.759v3.691c0 .736-.033 1.471-.098 2.207h.098c.722-1.068 1.829-1.601 3.32-1.601zm-.293 1.455c-1.08 0-1.856.306-2.324.918-.47.612-.703 1.647-.703 3.105v.078c0 1.465.239 2.512.717 3.14.479.628 1.262.942 2.349.942.963 0 1.681-.353 2.153-1.06.472-.706.708-1.726.708-3.06 0-1.355-.237-2.37-.713-3.048-.475-.677-1.204-1.015-2.187-1.015zM59.286 15.5l-1.719-4.424h-5.664l-1.7 4.424h-1.816l5.577-14.336h1.62L61.152 15.5zM57.03 9.484L55.43 5.158l-.684-2.138c-.195.78-.4 1.494-.615 2.138l-1.621 4.326zm10.137 6.211c-1.543 0-2.744-.473-3.604-1.42-.86-.948-1.289-2.307-1.289-4.078 0-1.797.435-3.182 1.304-4.155.87-.973 2.108-1.46 3.716-1.46.52 0 1.037.054 1.548.161.51.108.932.246 1.264.415l-.537 1.465c-.905-.338-1.676-.508-2.314-.508-1.081 0-1.879.34-2.393 1.02-.514.681-.771 1.695-.771 3.043 0 1.295.257 2.287.771 2.973.514.687 1.276 1.03 2.285 1.03.944 0 1.872-.208 2.783-.624v1.562c-.742.384-1.663.576-2.763.576zm9.6 0c-1.544 0-2.745-.473-3.604-1.42-.86-.948-1.29-2.307-1.29-4.078 0-1.797.435-3.182 1.305-4.155.869-.973 2.107-1.46 3.715-1.46.521 0 1.037.054 1.548.161.511.108.933.246 1.265.415l-.537 1.465c-.905-.338-1.677-.508-2.315-.508-1.08 0-1.878.34-2.392 1.02-.515.681-.772 1.695-.772 3.043 0 1.295.257 2.287.772 2.973.514.687 1.276 1.03 2.285 1.03.944 0 1.872-.208 2.783-.624v1.562c-.742.384-1.663.576-2.764.576zm9.863 0c-1.608 0-2.87-.486-3.784-1.46-.915-.973-1.373-2.312-1.373-4.018 0-1.719.427-3.088 1.28-4.107.853-1.019 2.005-1.528 3.457-1.528 1.347 0 2.422.435 3.222 1.304.801.869 1.202 2.046 1.202 3.53v1.064H83.29c.032 1.218.342 2.142.928 2.774.586.631 1.416.947 2.49.947a8.46 8.46 0 001.63-.151c.515-.101 1.117-.298 1.807-.591v1.543a8.506 8.506 0 01-1.67.537c-.52.104-1.136.156-1.845.156zm-.44-9.677c-.84 0-1.504.27-1.992.81s-.778 1.292-.87 2.256h5.46c-.013-1.003-.244-1.764-.693-2.285-.45-.521-1.084-.781-1.905-.781zm14.14 6.523c0 1.003-.373 1.779-1.122 2.33-.749.55-1.8.824-3.154.824-1.413 0-2.536-.224-3.37-.674V13.42c1.179.573 2.315.86 3.409.86.885 0 1.53-.144 1.933-.43.404-.287.606-.671.606-1.153 0-.423-.194-.781-.581-1.074-.388-.293-1.076-.628-2.066-1.006-1.009-.39-1.719-.724-2.129-1-.41-.277-.711-.588-.903-.933-.192-.345-.288-.765-.288-1.26 0-.88.358-1.572 1.074-2.08.716-.508 1.7-.762 2.95-.762a8.17 8.17 0 013.417.723L99.511 6.7c-1.088-.456-2.068-.683-2.94-.683-.73 0-1.282.115-1.66.346-.378.231-.566.549-.566.952 0 .391.162.715.488.972.325.257 1.084.614 2.275 1.07.892.331 1.551.64 1.978.927.426.287.74.609.942.967.202.358.303.788.303 1.289zm9.58 0c0 1.003-.373 1.779-1.122 2.33-.749.55-1.8.824-3.154.824-1.413 0-2.536-.224-3.37-.674V13.42c1.179.573 2.315.86 3.409.86.885 0 1.53-.144 1.933-.43.404-.287.606-.671.606-1.153 0-.423-.194-.781-.581-1.074-.388-.293-1.076-.628-2.066-1.006-1.009-.39-1.719-.724-2.129-1-.41-.277-.71-.588-.903-.933-.192-.345-.288-.765-.288-1.26 0-.88.358-1.572 1.074-2.08.716-.508 1.7-.762 2.95-.762a8.17 8.17 0 013.417.723l-.595 1.396c-1.088-.456-2.067-.683-2.94-.683-.729 0-1.282.115-1.66.346-.378.231-.566.549-.566.952 0 .391.162.715.488.972.325.257 1.084.614 2.275 1.07.892.331 1.551.64 1.978.927.426.287.74.609.942.967.202.358.303.788.303 1.289zm4.356 2.959h-1.757V4.777h1.757zm-1.894-13.623c0-.39.1-.674.298-.85.198-.175.444-.263.737-.263.273 0 .513.088.718.263.205.176.307.46.307.85 0 .384-.102.667-.307.85a1.047 1.047 0 01-.718.273 1.05 1.05 0 01-.737-.273c-.199-.183-.298-.466-.298-.85zm10.371 2.725c1.413 0 2.503.486 3.271 1.46.769.973 1.153 2.332 1.153 4.077 0 1.77-.39 3.14-1.172 4.106-.781.967-1.865 1.45-3.252 1.45-.723 0-1.367-.13-1.934-.39a3.384 3.384 0 01-1.386-1.162h-.137a48.244 48.244 0 01-.361 1.357h-1.26V.305h1.758v3.691c0 .736-.033 1.471-.098 2.207h.098c.722-1.068 1.83-1.601 3.32-1.601zm-.293 1.455c-1.08 0-1.855.306-2.324.918-.469.612-.703 1.647-.703 3.105v.078c0 1.465.239 2.512.717 3.14.479.628 1.262.942 2.35.942.963 0 1.68-.353 2.152-1.06.472-.706.708-1.726.708-3.06 0-1.355-.237-2.37-.713-3.048-.475-.677-1.204-1.015-2.187-1.015zm9.277 9.443h-1.757V4.777h1.757zm-1.894-13.623c0-.39.1-.674.298-.85.198-.175.444-.263.737-.263.273 0 .513.088.718.263.205.176.307.46.307.85 0 .384-.102.667-.307.85a1.047 1.047 0 01-.718.273 1.05 1.05 0 01-.737-.273c-.199-.183-.298-.466-.298-.85zm7.05 13.623h-1.757V.305h1.758zm5.157 0h-1.758V4.777h1.758zm-1.895-13.623c0-.39.1-.674.298-.85.199-.175.444-.263.737-.263.274 0 .513.088.718.263.205.176.308.46.308.85 0 .384-.103.667-.308.85a1.047 1.047 0 01-.718.273 1.05 1.05 0 01-.737-.273c-.198-.183-.298-.466-.298-.85zm8.877 12.383c.228 0 .495-.023.801-.069.306-.045.537-.097.693-.156v1.348c-.162.071-.415.141-.756.21a5.29 5.29 0 01-1.04.102c-2.097 0-3.145-1.103-3.145-3.31v-6.24h-1.514v-.84l1.534-.703.703-2.286h1.045v2.461h3.095v1.368h-3.095v6.19c0 .62.148 1.095.444 1.427.296.332.708.498 1.235.498zm1.953-9.483h1.885l2.315 6.104c.488 1.328.787 2.301.898 2.92h.078c.059-.241.192-.692.4-1.353.209-.66.385-1.19.528-1.587l2.178-6.084h1.894l-4.619 12.207c-.45 1.185-.983 2.035-1.602 2.55-.618.514-1.383.77-2.294.77-.489 0-.974-.055-1.456-.165v-1.397c.326.078.717.117 1.172.117.56 0 1.035-.154 1.426-.463.39-.31.71-.787.957-1.431l.557-1.426zM7.157 45.5H2.001v-1.035l1.68-.381V32.658l-1.68-.4v-1.035h5.156v1.035l-1.68.4v11.426l1.68.38zm9.824 0v-6.855c0-.873-.193-1.522-.58-1.949-.388-.426-.995-.64-1.822-.64-1.1 0-1.9.305-2.398.914-.498.608-.747 1.6-.747 2.973V45.5H9.677V34.777h1.416l.263 1.465h.098a3.31 3.31 0 011.396-1.225 4.492 4.492 0 011.983-.435c1.315 0 2.292.319 2.93.957.638.638.957 1.63.957 2.979V45.5zm6.817 0H22.04V34.777h1.758zm-1.895-13.623c0-.39.1-.674.298-.85.199-.175.444-.263.737-.263.274 0 .513.088.718.263.205.176.308.46.308.85 0 .384-.103.667-.308.85a1.047 1.047 0 01-.718.273 1.05 1.05 0 01-.737-.273c-.199-.183-.298-.466-.298-.85zM30.78 44.26c.228 0 .495-.023.8-.069.307-.045.538-.097.694-.156v1.348c-.163.071-.415.141-.757.21a5.29 5.29 0 01-1.04.102c-2.096 0-3.144-1.103-3.144-3.31v-6.24h-1.514v-.84l1.533-.703.703-2.286H29.1v2.461h3.096v1.368H29.1v6.19c0 .62.149 1.095.445 1.427.296.332.708.498 1.235.498zm5.39 1.24h-1.757V34.777h1.758zm-1.894-13.623c0-.39.1-.674.298-.85.199-.175.444-.263.737-.263.274 0 .513.088.718.263.205.176.308.46.308.85 0 .384-.103.667-.308.85a1.047 1.047 0 01-.718.273 1.05 1.05 0 01-.737-.273c-.199-.183-.298-.466-.298-.85zM46.19 45.5l-.342-1.523h-.078c-.534.67-1.066 1.124-1.596 1.362-.53.237-1.2.356-2.007.356-1.055 0-1.882-.276-2.48-.83-.6-.553-.9-1.334-.9-2.344 0-2.174 1.716-3.313 5.147-3.417l1.817-.069V38.4c0-.813-.176-1.414-.528-1.801-.351-.388-.914-.581-1.689-.581-.566 0-1.102.084-1.606.253-.505.17-.979.359-1.421.567l-.537-1.318a7.958 7.958 0 011.767-.674 7.642 7.642 0 011.895-.244c1.295 0 2.259.286 2.89.859.632.573.948 1.484.948 2.734V45.5zm-3.623-1.22c.983 0 1.756-.266 2.32-.797.563-.53.844-1.284.844-2.26v-.967l-1.582.068c-1.23.046-2.127.241-2.69.586-.563.345-.845.889-.845 1.631 0 .56.171.99.513 1.29.342.299.822.448 1.44.448zm11.807-.02c.228 0 .495-.023.8-.069.307-.045.538-.097.694-.156v1.348c-.163.071-.415.141-.757.21a5.29 5.29 0 01-1.04.102c-2.096 0-3.144-1.103-3.144-3.31v-6.24h-1.514v-.84l1.533-.703.703-2.286h1.045v2.461h3.096v1.368h-3.096v6.19c0 .62.148 1.095.444 1.427.297.332.708.498 1.236.498zm5.39 1.24h-1.757V34.777h1.757zM57.87 31.877c0-.39.1-.674.298-.85.198-.175.444-.263.737-.263.274 0 .513.088.718.263.205.176.307.46.307.85 0 .384-.102.667-.307.85a1.047 1.047 0 01-.718.273 1.05 1.05 0 01-.737-.273c-.199-.183-.298-.466-.298-.85zM65.526 45.5l-4.062-10.723h1.884l2.276 6.319c.45 1.27.736 2.216.86 2.842h.077a11.495 11.495 0 01.176-.64c.04-.127.28-.861.723-2.202l2.285-6.319h1.875L67.548 45.5zm12.354.195c-1.608 0-2.87-.486-3.784-1.46-.915-.973-1.373-2.312-1.373-4.018 0-1.719.427-3.088 1.28-4.107.853-1.019 2.005-1.528 3.457-1.528 1.347 0 2.422.435 3.222 1.304.801.869 1.202 2.046 1.202 3.53v1.064H74.54c.032 1.218.342 2.142.928 2.774.586.631 1.416.947 2.49.947a8.46 8.46 0 001.63-.151c.515-.101 1.117-.298 1.807-.591v1.543a8.506 8.506 0 01-1.67.537c-.52.104-1.136.156-1.845.156zm-.44-9.677c-.84 0-1.504.27-1.992.81s-.778 1.292-.87 2.256h5.46c-.013-1.003-.244-1.764-.693-2.285-.45-.521-1.084-.781-1.905-.781zM137.741 45.5h-1.816l-2.784-9.355c-.41-1.394-.65-2.334-.722-2.823-.104.749-.332 1.71-.684 2.881L129.04 45.5h-1.817l-3.779-14.277h1.875l2.217 8.72c.3 1.14.527 2.272.684 3.399.143-1.068.397-2.237.761-3.506l2.52-8.613h1.855l2.627 8.681c.339 1.127.6 2.272.781 3.438.105-.899.336-2.038.694-3.418l2.207-8.701h1.875zm14.57 0l-1.718-4.424h-5.664l-1.7 4.424h-1.816l5.576-14.336h1.621l5.567 14.336zm-2.256-6.016l-1.601-4.326-.684-2.138c-.195.78-.4 1.494-.615 2.138l-1.621 4.326zm10.098 6.016h-5.156v-1.035l1.68-.381V32.658l-1.68-.4v-1.035h5.156v1.035l-1.68.4v11.426l1.68.38z"></path></g></g></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+
+
+<div class="default-grid nav-container nav-page-specific">
+  <div class="nav">
+    <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
+      <ul>
+        <li class="nav__item">
+          
+          <a href=".">All Understanding Docs</a>
+          
+        </li>
+        
+        
+        <li class="nav__item">
+          <a href="input-modalities">
+            <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
+            </svg>
+            Guideline: Input Modalities
+          </a>
+        </li>
+        
+        
+        <li class="nav__item">
+          <a href="dragging-movements">
+            <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
+            </svg>
+            Previous SC: Dragging Movements
+          </a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="default-grid with-gap leftcol">
+<aside class="box nav-hack sidebar standalone-resource__sidebar">
+    <header class="box-h">Page Contents</header>
+    <div class="box-i">
+      <nav aria-label="page contents" class="navtoc">
+        <ul><li><a href="#brief">In Brief</a></li>
+<li><a href="#success-criterion">Success Criterion</a></li>
+<li><a href="#intent">Intent</a></li>
+<li><a href="#benefits">Benefits</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#resources">Related Resources</a></li>
+<li><a href="#techniques">Techniques</a></li>
+<li><a href="#key-terms">Key Terms</a></li>
+</ul>
+      </nav>
+    </div>
+</aside>
+
+<main id="main" class="standalone-resource__main">
+    
+<h1>
+  <span class="standalone-resource__type-of-guidance">
+    Understanding
+    <a href="https://w3.org/TR/WCAG22#target-size-minimum">SC 2.5.8</a>
+  </span>Target Size (Minimum) (Level AA)
+</h1>
+
+
+
+    <section id="brief">
+        <h2>In Brief</h2>
+        <dl>
+            <dt>Goal</dt><dd>Make controls easier to activate.</dd>
+            <dt>What to do</dt><dd>Ensure targets meet a minimum size or have sufficient spacing around them.</dd>
+            <dt>Why it's important</dt><dd>Some people with physical impairments cannot click small buttons that are close together.</dd>
+        </dl>
+    </section>
+    
+    
+
+<section id="success-criterion" class="box">
+	<h2 class="box-h box-h-icon">Success Criterion (SC)</h2>
+	<div class="box-i"><p>The size of the <a href="#dfn-target">target</a> for <a href="#dfn-pointer-input">pointer inputs</a> is at least 24 by 24 <a href="#dfn-css-pixel">CSS pixels</a>, except when:</p>
+    <dl>
+        <dt>Spacing</dt>
+        <dd>Undersized targets (those less than 24 by 24 CSS pixels) are positioned so that if a 24 CSS pixel diameter circle is centered on the <a href="#dfn-minimum-bounding-box">bounding box</a> of each, the circles do not intersect another target or the circle for another undersized target;</dd>
+        <dt>Equivalent</dt> 
+        <dd>The function can be achieved through a different control on the same page that meets this criterion;</dd>
+        <dt>Inline</dt> 
+        <dd>The target is in a sentence or its size is otherwise constrained by the line-height of non-target text;</dd>
+        <dt>User Agent Control</dt> 
+        <dd>The size of the target is determined by the <a href="#dfn-user-agent">user agent</a> and is not modified by the author;</dd>
+        <dt>Essential</dt> 
+        <dd>A particular <a href="#dfn-presentation">presentation</a> of the target is <a href="#dfn-essential">essential</a> or is legally required for the information being conveyed.</dd>
+    </dl>
+    <div class="note">
+				<p class="note-title marker">Note 1</p>
+				<p>Targets that allow for values to be selected spatially based on position within the target are considered one target for the purpose of the success criterion. Examples include sliders, color pickers displaying a gradient of colors, or editable areas where you position the cursor.</p>
+			</div>
+    <div class="note">
+				<p class="note-title marker">Note 2</p>
+				<p>For inline targets the line-height should be interpreted as perpendicular to the flow of text. For example, in a language displayed vertically, the line-height would be horizontal.</p>
+			</div></div>
+</section>
+	
+
+<section id="intent">
+        <h2>Intent</h2>
+
+        <p>The intent of this success criterion is to help ensure targets can be easily activated without accidentally activating an adjacent target.  Users with dexterity limitations and those who have difficulty with fine motor movement find it difficult to accurately activate small targets when there are other targets that are too close.  Providing sufficient size, or sufficient spacing between targets, will reduce the likelihood of accidentally activating the wrong control.</p>
+        <p>Disabilities addressed by this requirement include hand tremors, spasticity, and quadriplegia.  Some people with disabilities use specialized input devices instead of a computer mouse or trackpad.  Typically these types of input device do not provide as much accuracy as mainstream pointing devices.  Meeting this requirement also ensures that touchscreen interfaces are easier to use.</p>
+        <div class="note">
+				<p class="note-title marker">Note</p>
+				<p>This success criterion defines a <em>minimum size</em> and, if this can't be met, a <em>minimum spacing</em>. It is still possible to have very small, and difficult to activate, targets and meet the requirements of this Success Criterion, provided that the targets don't have any adjacent targets that are too close. However, using larger target sizes will help many people use targets more easily. <em>As a best practice</em> it is recommended to at least meet the <em>minimum size</em> requirement of the Success Criterion, regardless of spacing. For important links/controls, consider aiming for the stricter <a href="target-size-enhanced.html">2.5.5 Target Size (Enhanced)</a>.</p>
+			</div>
+
+        <section id="exceptions">
+            <h3>Exceptions</h3>
+            <p>The requirement is for targets to be at least 24 by 24 CSS pixels in size. There are five exceptions:</p>
+
+            <ul>
+                <li><strong>Spacing:</strong> Undersized targets (those less than 24 by 24 CSS pixels) are positioned so that if a 24 CSS pixel diameter circle is centered on the <a href="#dfn-minimum-bounding-box">bounding box</a> of each, the circles do not intersect another target or the circle for another undersized target.</li>
+                <li><strong>Equivalent:</strong> In cases where a target does not have a size equivalent to 24 by 24 CSS pixels, but there is another control that can achieve the underlying function that <em>does</em> meet the requirements of this success criterion, the target can be excepted based on the "Equivalent" exception.</li>
+                <li><strong>Inline:</strong> The success criterion does not apply to inline targets in sentences, or where the size of the target is constrained by the line-height of non-target text. This exception is allowed because text reflow based on viewport size makes it impossible for authors to anticipate where links may be positioned relative to one another. Applying this success criterion when multiple links are embedded in blocks of smaller text often results in an undesirable design. It is more important to set the line height to a value that improves readability.</li>
+                <li><strong>User agent control:</strong> Browsers have default renderings of some controls, such as the days of the month calendar in an <code>&lt;input type="date"&gt;</code>. As long as the author has not modified the user agent default size, the target size for a <q>User agent control</q> is excepted.</li>
+                <li><strong>Essential:</strong> If the size and spacing of the targets is fundamental to the information being conveyed, the <q>Essential</q> exception applies. For example, in digital maps, the position of pins is analogous to the position of places shown on the map. If there are many pins close together, the spacing between pins and neighboring pins will often be below 24 CSS pixels. It is essential to show the pins at the correct map location, therefore the Essential exception applies. A similar example is an interactive data visualization where targets are necessarily dense. Another example is where jurisdictions legally require online forms to replicate paper forms, which can impose constraints on the size of targets. In such jurisdictions, any legal requirement to replicate small targets can be considered essential. When the "Essential" exception is applicable, authors are strongly encouraged to provide equivalent functionality through alternative means to the extent practical.</li>
+            </ul>
+        </section>
+
+        <section id="size-requirement">
+            <h3>Size requirement</h3>
+
+            <p>For a target to be "at least 24 by 24 CSS pixels", it must be conceptually possible to draw a solid 24 by 24 CSS pixel square, aligned to the horizontal and vertical axis such that the square is completely within the target (does not extend outside the target's area).</p>
+
+            <figure id="target-size-basic">
+                <img src="img/target-size-basic.svg" width="180" height="75" alt="Three square boxes next to each other, each with a height and width of 24px">
+                <figcaption><p><span>Figure 1.</span> Where targets are at least a 24 by 24 CSS pixel square, they meet the size requirement of the criterion and pass (image shown to scale - <a href="img/target-size-basic.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+
+            <p>The 24 by 24px square has to be aligned with the page, although the target itself could be skewed.</p>
+
+            <figure id="target-size-skewed">
+                <img src="img/target-size-skewed.svg" width="130" height="120" alt="A skewed rectangle that includes a 24 by 24px square within it.">
+                <figcaption><p><span>Figure 2.</span> So long as there is a solid 24 by 24px square within the target, it meets the size requirement of the criterion and passes (image shown to scale - <a href="img/target-size-skewed.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+
+            <p>If a target is not large enough to allow for a 24 by 24px square to be drawn inside it, it is considered <em>undersized</em>, and does not pass the size requirement of the success criterion. However, if it has sufficient space around it without adjacent targets, it may still pass the criterion thanks to the spacing exception (below).</p>
+
+            <figure id="target-size-undersized-rounded">
+                <img src="img/target-size-undersized-rounded.svg" width="250" height="105" alt="A circle with a diameter of 24px, but not filling up a 24px square.">
+                <figcaption><p><span>Figure 3.</span> The rounded corners do not leave sufficient space to draw a 24 by 24px square inside the target, making the target <em>undersized</em>. Depending on the spacing to other targets, it may still pass if it has sufficient clearance (image shown at 1:1 and 2:1 scale - <a href="img/target-size-undersized-rounded.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+
+            <p>The requirement is independent of the zoom factor of the page; when users zoom in, the CSS pixel size of elements does not change. This means that authors cannot meet it by claiming that the target will have enough spacing or sufficient size if the user zooms into the page.</p>
+        
+            <p>The requirement does not apply to targets while they are obscured by content displayed as a result of a user interaction or scripted behavior of content, for example:</p>
+
+            <ul>
+                <li>interacting with a combobox shows a dropdown list of suggestions</li>
+                <li>activating a button displays a modal dialog</li>
+                <li>content displays a cookie banner after page load</li>
+                <li>content displays a "Take a survey" dialog after some period of user inactivity</li>
+            </ul>    
+            <p>The requirement does however apply to targets in any new content that appears on top of other content.</p>
+
+            <p>While the success criterion primarily helps touch users by providing target sizing to prevent accidental triggering of adjacent targets, it is also useful for mouse or pen users. It reduces the chances of erroneous activation due to either a tremor or reduced precision, whether because of reduced fine motor control or input imprecision.</p>
+
+        </section>
+        <section id="spacing">
+            <h3>Spacing</h3>
+
+            <p>When the minimum size for a target is not met, spacing can at least improve the user experience. There is less chance of accidentally activating a neighboring target if a target is not immediately adjacent to another. Touchscreen devices and user agents generally have internal heuristics to identify which link or control is closest to a user's touch interaction - this means that sufficient spacing between targets can work as effectively as a larger target size itself.</p>
+
+            <p>When a target is smaller than 24 by 24 CSS pixels, it is <em>undersized</em>. In this case, we check if it at least has sufficient <em>spacing</em> by drawing an imaginary 24 CSS pixel diameter circle over the undersized target, centered on the target's <a href="#dfn-minimum-bounding-box">bounding box</a>. For rectangular targets, the bounding box coincides with the target itself – thus, the circle is placed on the center of the target. If the target is <em>not</em> rectangular – for instance, if the target is clipped, has rounded corners, or if it's a more complex clickable SVG shape – we need to first determine the bounding box, and then find the box's center. Note that for concave shapes, the center of the bounding box may be outside of the target itself. Now, we center the circle on the center of the bounding box.</p>
+
+            <figure id="target-size-bounding-boxes">
+                <img src="img/target-size-bounding-boxes.svg" width="395" height="100" alt="Three undersized targets - a square target, a convex target, and a concave target; the concave and convex targets have a bounding box around them; all three targets have a 24 CSS pixel circle centered on the center of their bounding box">
+                <figcaption><p><span>Figure 4.</span> For a square/rectangular target, the 24 CSS pixel diameter circle is centered on the target itself. For convex and concave targets, it is centered on the bounding box of the shape. Note the concave target, where in this case the center of the bounding box is outside of the actual target (image shown to scale - <a href="img/target-size-bounding-boxes.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+
+            <p>We repeat this process for all adjacent undersized targets. To determine if an undersized target has sufficient spacing (to pass this Success Criterion's spacing exception), we check that the 24 CSS pixel diameter circle of the target does not intersect another target or the circle of any other adjacent undersized targets.</p>
+
+            <p>The following example shows three versions of a horizontal row of six icon-based buttons:</p>
+            <ul>
+                <li>In the top row, the dimensions of each target are 24 by 24 CSS pixels, passing this success criterion.</li>
+                <li>In the second row, the same targets are only 20 by 20 CSS pixels, but have a 4 CSS pixel space between them – as the target size is below 24 by 24 CSS pixels, these need to be evaluated against the Success Criterion's spacing exception, and they pass.</li>
+                <li>In the last row, the targets are again 20 by 20 CSS pixels, but have no space between them – these fail the spacing exception. This is because the imaginary 24 CSS pixel diameter circles over the targets would intersect.</li>
+            </ul>
+
+            <figure id="target-spacing-toolbar">
+                <img src="img/target-spacing-toolbar.svg" width="560" height="265" alt="The first toolbar's targets have a dimension of 24 by 24 CSS pixels, so pass. The second toolbar, with smaller targets, shows 24 CSS pixel circles drawn on each target for assessment. The circles do not intersect and so the targets have enough space to pass. The third toolbar shows similar circles on the targets, but the circles intersect due to the lack of spacing between targets, so the toolbar fails.">
+                <figcaption><p><span>Figure 5.</span> Three rows of targets, illustrating two ways of meeting this success criterion and one way of failing it (image shown to scale - <a href="img/target-spacing-toolbar.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+            <p>The next two illustrations show sets of buttons which are only 16 CSS pixels tall. In the first set, there are no targets immediately above or below the buttons, so they pass. In the second illustration, there are further buttons, and they have been stacked on top of one another, resulting in a fail.</p>
+            <figure id="target-text-buttons-one-row">
+                <img src="img/target-text-buttons-single-row.svg" width="785" height="105" alt="A row of buttons which are more than 44px wide and 16 CSS pixels high. There are no close targets above or below. The buttons are overlaid with the 24 CSS pixel diameter circles, and do not intersect each other nor any other targets.">
+                <figcaption><p><span>Figure 6.</span> While the height of the targets is only 16 CSS pixels, the lack of adjacent targets above and below means that the targets pass this success criterion (image shown to scale - <a href="img/target-text-buttons-single-row.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+
+            <figure id="target-text-buttons-two-rows">
+                <img src="img/target-text-buttons-two-rows.svg" width="785" height="105" alt="Two rows of buttons only 16 CSS pixels high, with no spacing between them. The buttons are overlaid with the 24 CSS pixel diameter circles, and all the circles either overlap another circle, or another target.">
+                <figcaption><p><span>Figure 7.</span> Two rows of buttons, both with a height of only 16 CSS pixels. The rows are close, with only a 1 CSS pixel gap between them. This means that the 24 CSS pixel spacing circles of the targets in one row will <em>intersect</em> the targets (and their circles, depending on their respective widths) in the other line, thus failing the success criterion. Image shown to scale - <a href="img/target-text-buttons-two-rows.svg">see the scalable original version</a>.</p></figcaption>
+            </figure>
+            <p>The following two illustrations show how menu items can be adjusted to properly meet this requirement. In the first illustration, the <q>About us</q> menu has been activated, showing that each of the menu item targets has a 24 CSS pixel height (text and padding), and so passes. In the second illustration, the same menu is expanded, but the menu items only achieve 18 CSS pixels in height, and so fail.</p>
+            <figure id="target-dropdown">
+                <img src="img/target-dropdown.svg" width="690" height="210" alt="Two examples of a dropdown menu - a pass example with menu items 24 CSS pixels high, and a fail example with menu items only 18 CSS pixels high. One item has a 24 CSS pixel diameter circle which intersects adjacent targets.">
+                <figcaption><p><span>Figure 8.</span> The menu items with a height of 24 CSS pixels pass. For the menu items that are only 18 CSS pixels high, the 24 CSS pixel spacing circles of the targets in one row will intersect the adjacent menu item targets and circles, and fail (image shown to scale - <a href="img/target-dropdown.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+
+            <p>The following example has one large target (an image that links to a new page related to that image) and a very small second target (a control with a magnifier icon to open a zoomed-in preview, possibly in a modal, of the image).</p>
+            <p>In the top row, the small target overlaps - or, to be more technically accurate, <em>clips</em> - the large target. The small target itself has a size of 24 by 24 CSS pixels, so passes. In the second row, we see that if the second target is any smaller – in this case 16 by 16 CSS pixels – it fails the criterion, as the imaginary circle with a 24 CSS pixel diameter we draw over the small target will intersect the large target itself.</p>
+
+            <figure id="target-large-small-clipping">
+                <img src="img/target-large-small-clipping.svg" width="460" height="320" alt="Two rows showing a small target clipping a large target">
+                <figcaption><p><span>Figure 9.</span> The 24 by 24 CSS pixel small target passes, while the 16 by 16 CSS pixel small target fails, since the 24 CSS pixel diameter circle used for undersized targets intersect the large target (image shown to scale - <a href="img/target-large-small-clipping.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+
+            <p>In the following example, we have the same two targets – a large target and a small target. This time, the small target touches/abuts the large target. If the small target is smaller than 24 by 24 CSS pixels, the imaginary circle with a 24 CSS pixel diameter we draw over the small target will intersect the large target itself, failing the requirement. The undersized target must be spaced further away from the large target until its circle doesn't intersect the large target.</p>
+
+            <figure id="target-large-small-touching">
+                <img src="img/target-large-small-touching.svg" width="460" height="320" alt="Two rows showing a small target and a large target touching/abutting">
+                <figcaption><p><span>Figure 10.</span> In the first row, the 16 by 16 CSS pixel target touching/abutting the large target fails, as its 24 CSS pixel diameter circle used for undersized targets intersects the large target. In the second row we see that the only way the undersized target can pass is by adding a 4 CSS pixel spacing gap between the targets (image shown to scale - <a href="img/target-large-small-touching.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+
+            <div class="note">
+				<p class="note-title marker">Note</p>
+				<p>Users with different disabilities have different needs for control sizes. It can be beneficial to provide an option to increase the active target area without increasing the visible target size. Another option is to provide a mechanism to control the density of layout and thereby change target size or spacing, or both. This can be beneficial for a wide range of users. For example, users with visual field loss may prefer a more condensed layout with smaller sized controls while users with other forms of low vision may prefer large controls.</p>
+			</div>
+        </section>
+
+        <section id="user-agent-control">
+            <h3>User agent control</h3>
+            <p>This success criterion has an exception for the size of targets determined by a user agent and not modified by the author. An example of this kind of target is a browser's scrollbars. If a scrollbar's dimensions have been modified by the author then there must be a passing amount of spacing between the scrollbar and the content of the page. The following example shows a passing and a failing design.</p>
+            <figure id="target-browser-scrollbars">
+                <img alt="A page's scrollbar has been modified to give it custom track and thumb colors. The track is less than 24px wide and the thumb is narrower. The page has a back-to-top link that is next to the scrollbar." height="100" src="img/target-custom-scrollbar-spacing.svg" width="300">
+                <figcaption><p><span>Figure 11.</span> The passing example has enough space between the link and the scrollbar for a 24 CSS pixel diameter circle, placed over the scrollbar, to not overlap the link. The failing example has no space between the link and the scrollbar, which fails the criterion because the 24 CSS pixel diameter circle overlaps the link. (Image shown to scale - <a href="img/target-custom-scrollbar-spacing.svg">see the scalable original version</a>)</p></figcaption>
+            </figure>
+        </section>
+    </section>
+
+    <section id="benefits">
+        <h2>Benefits</h2>
+        <p>Having targets with sufficient size - or at least sufficient target spacing - can help all users who may have difficulty in confidently targeting or operating small controls. Users who benefit include, but are not limited to:</p>
+        <ul>
+            <li>People who use a mobile device where the touch screen is the primary mode of interaction;</li>
+            <li>People using mouse, stylus or touch input who have mobility impairments such as hand tremors;</li>
+            <li>People using a device in environments where they are exposed to shaking such as public transportation;</li>
+            <li>Mouse users who have difficulty with fine motor movements;</li>
+            <li>People who access a device using one hand;</li>
+            <li>People with large fingers, or who are operating the device with only a part of their finger or knuckle.</li>
+        </ul>
+
+    </section>
+
+    <section id="examples">
+        <h2>Examples</h2>
+
+        <ul>
+            <li>Three buttons are on-screen and the target size of each button is 24 by 24 CSS pixels. Since the target size itself is 24 by 24 CSS pixels, no additional spacing is required, the success criterion passes.</li>
+            <li>A row of buttons, each of which has a horizontal width of more than 24 CSS pixels, a height of only 20 CSS pixels, and vertical margin of 4 CSS pixels above and below the row of buttons. Since there is sufficient spacing both above and below the row of buttons, the success criterion passes.</li>
+            <li>Links within a paragraph of text have varying target dimensions. Links within paragraphs of text do not need to meet the 24 by 24 CSS pixels requirements, so the success criterion passes.</li>
+        </ul>
+    </section>
+
+    <section id="resources">
+
+        <h2>Related Resources</h2>
+<p>Resources are for information purposes only, no endorsement implied.</p>
+
+
+        <ul>
+            <li><a href="https://dl.acm.org/doi/10.1145/1152215.1152260">Target size study for one-handed thumb use on small touchscreen devices</a></li>
+        </ul>
+    </section>
+
+    
+    <section id="techniques">
+  <h2>Techniques</h2>
+  <p>
+    Each numbered item in this section represents a technique or combination of techniques
+    that the Accessibility Guidelines Working Group deems sufficient for meeting this success criterion.
+    A technique may go beyond the minimum requirement of the criterion. There may be other ways of meeting the criterion not covered by these techniques.
+    For information on using other techniques, see
+    <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>,
+    particularly the "Other Techniques" section.
+  </p>
+
+  
+    <section id="sufficient">
+      <h3>Sufficient Techniques</h3><ul>
+  <li>
+    <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C42">C42: Using min-height and min-width on target container to ensure sufficient target spacing</a></li>
+</ul>
+</section>
+  </section>
+
+
+
+
+
+
+<section id="key-terms">
+  <details>
+    <summary><h2>Key Terms</h2></summary>
+    <dl>
+      <dt id="dfn-assistive-technology">assistive technology</dt><dd><p>hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
+      of users with disabilities that go beyond those offered by mainstream user agents
+   </p>
+   
+   <div class="note">
+				<p class="note-title marker">Note 1</p>
+				<p>Functionality provided by assistive technology includes alternative presentations
+      (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
+      voice), additional navigation or orientation mechanisms, and content transformations
+      (e.g., to make tables more accessible).
+   </p>
+			</div>
+   
+   <div class="note">
+				<p class="note-title marker">Note 2</p>
+				<p>Assistive technologies often communicate data and messages with mainstream user agents
+      by using and monitoring APIs.
+   </p>
+			</div>
+   
+   <div class="note">
+				<p class="note-title marker">Note 3</p>
+				<p>The distinction between mainstream user agents and assistive technologies is not absolute.
+      Many mainstream user agents provide some features to assist individuals with disabilities.
+      The basic difference is that mainstream user agents target broad and diverse audiences
+      that usually include people with and without disabilities. Assistive technologies
+      target narrowly defined populations of users with specific disabilities. The assistance
+      provided by an assistive technology is more specific and appropriate to the needs
+      of its target users. The mainstream user agent may provide important functionality
+      to assistive technologies like retrieving web content from program objects or parsing
+      markup into identifiable bundles.
+   </p>
+			</div>
+   
+   <aside class="example"><p class="example-title marker">Example</p><p>Assistive technologies that are important in the context of this document include
+      the following:
+   </p>
+   
+   <ul>
+      
+      <li>screen magnifiers, and other visual reading assistants, which are used by people with
+         visual, perceptual and physical print disabilities to change text font, size, spacing,
+         color, synchronization with speech, etc. in order to improve the visual readability
+         of rendered text and images;
+      </li>
+      
+      <li>screen readers, which are used by people who are blind to read textual information
+         through synthesized speech or braille;
+      </li>
+      
+      <li>text-to-speech software, which is used by some people with cognitive, language, and
+         learning disabilities to convert text into synthetic speech;
+      </li>
+      
+      <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+      
+      <li>alternative keyboards, which are used by people with certain physical disabilities
+         to simulate the keyboard (including alternate keyboards that use head pointers, single
+         switches, sip/puff and other special input devices.);
+      </li>
+      
+      <li>alternative pointing devices, which are used by people with certain physical disabilities
+         to simulate mouse pointing and button activations.
+      </li>
+      
+   </ul>
+   </aside></dd>
+      <dt id="dfn-blocks-of-text">blocks of text</dt><dd><p>more than one sentence of text</p></dd>
+      <dt id="dfn-content">content</dt><dd><p>information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+   </p></dd>
+      <dt id="dfn-css-pixel">CSS pixel</dt><dd><p>visual angle of about 0.0213 degrees</p>
+   					
+   <p>A CSS pixel is the canonical unit of measure for all lengths and measurements in CSS.
+      This unit is density-independent, and distinct from actual hardware pixels present
+      in a display. User agents and operating systems should ensure that a CSS pixel is
+      set as closely as possible to the <a href="https://www.w3.org/TR/css3-values/#reference-pixel">CSS Values and Units Module Level 3 reference pixel</a> [<a href="https://www.w3.org/TR/css-values-3/">css3-values</a>], which takes into account the physical dimensions of the display
+      and the assumed viewing distance (factors that cannot be determined by content authors).
+   </p></dd>
+      <dt id="dfn-essential">essential</dt><dd><p>if removed, would fundamentally change the information or functionality of the content,
+      <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+   </p></dd>
+      <dt id="dfn-minimum-bounding-box">minimum bounding box</dt><dd><p>the smallest enclosing rectangle aligned to the horizontal axis within which all the points of a shape lie. For components which wrap onto multiple lines as part of a sentence or <a href="#dfn-blocks-of-text">block of text</a> (such as hypertext links), the bounding box is based on how the component would appear on a single line.</p></dd>
+      <dt id="dfn-pointer-input">pointer input</dt><dd><p>input from a device that can target a specific coordinate (or set of coordinates) on a screen,
+      such as a mouse, pen, or touch contact
+   </p>
+   <div class="note">
+				<p class="note-title marker">Note</p>
+				<p>See the <a href="https://www.w3.org/TR/pointerevents/#dfn-pointer">Pointer Events
+      definition for "pointer"</a> [[pointerevents]].</p>
+			</div></dd>
+      <dt id="dfn-presentation">presentation</dt><dd><p>rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+   </p></dd>
+      <dt id="dfn-structure">structure</dt><dd><ul>
+      
+      <li>The way the parts of a <a href="#dfn-web-page">web page</a> are organized in relation to each other; and
+      </li>
+      
+      <li>The way a collection of <a href="#dfn-web-page">web pages</a> is organized
+      </li>
+      
+   </ul></dd>
+      <dt id="dfn-target">target</dt><dd><p>region of the display that will accept a pointer action, such as the interactive area of a <a href="#dfn-user-interface-component">user interface component</a></p> 
+    <div class="note">
+				<p class="note-title marker">Note</p>
+				<p>If two or more targets are overlapping, the overlapping area should not be included in the measurement of the target size, except when the overlapping targets perform the same action or open the same page.</p>
+			</div></dd>
+      <dt id="dfn-user-agent">user agent</dt><dd><p>any software that retrieves and presents web content for users</p>
+   
+   <aside class="example"><p class="example-title marker">Example</p><p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with web content.
+   </p></aside></dd>
+      <dt id="dfn-user-interface-component">user interface component</dt><dd><p>a part of the content that is perceived by users as a single control for a distinct
+      function
+   </p>
+   
+   <div class="note">
+				<p class="note-title marker">Note 1</p>
+				<p>Multiple user interface components may be implemented as a single programmatic element.
+      "Components" here is not tied to programming techniques, but rather to what the user
+      perceives as separate controls.
+   </p>
+			</div>
+   
+   <div class="note">
+				<p class="note-title marker">Note 2</p>
+				<p>User interface components include form elements and links as well as components generated
+      by scripts.
+   </p>
+			</div>
+   
+   <div class="note">
+				<p class="note-title marker">Note 3</p>
+				<p>What is meant by "component" or "user interface component" here is also sometimes
+      called "user interface element".
+   </p>
+			</div>
+   
+   <aside class="example"><p class="example-title marker">Example</p><p>An applet has a "control" that can be used to move through content by line or page
+      or random access. Since each of these would need to have a name and be settable independently,
+      they would each be a "user interface component."
+   </p></aside></dd>
+      <dt id="dfn-web-page">web page</dt><dd><p>a non-embedded resource obtained from a single URI using HTTP plus any other resources
+      that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a></p>
+   
+   <div class="note">
+				<p class="note-title marker">Note 1</p>
+				<p>Although any "other resources" would be rendered together with the primary resource,
+      they would not necessarily be rendered simultaneously with each other.
+   </p>
+			</div>
+   
+   <div class="note">
+				<p class="note-title marker">Note 2</p>
+				<p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
+      within the scope of conformance to be considered a web page.
+   </p>
+			</div>
+   
+   <aside class="example"><p class="example-title marker">Example 1</p><p>A web resource including all embedded images and media.</p></aside>
+   
+   <aside class="example"><p class="example-title marker">Example 2</p><p>A web mail program built using Asynchronous JavaScript and XML (AJAX). The program
+      lives entirely at http://example.com/mail, but includes an inbox, a contacts area
+      and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
+      to display, but do not change the URI of the page as a whole.
+   </p></aside>
+   
+   <aside class="example"><p class="example-title marker">Example 3</p><p>A customizable portal site, where users can choose content to display from a set of
+      different content modules.
+   </p></aside>
+   
+   <aside class="example"><p class="example-title marker">Example 4</p><p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
+      interactive shopping environment where you visually move around in a store dragging
+      products off of the shelves around you and into a visual shopping cart in front of
+      you. Clicking on a product causes it to be demonstrated with a specification sheet
+      floating alongside. This might be a single-page website or just one page within a
+      website.
+   </p></aside></dd></dl>
+  </details>
+</section>
+
+
+
+
+
+
+
+<a class="button button-backtotop" href="#top">
+  <span>
+    <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
+      <path d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
+    </svg> Back to Top
+  </span>
+</a>
+
+</main>
+<aside class="box box-icon box-space-above" id="helpimprove" style="grid-column: 2 / 8; grid-row: 3">
+  <header class="box-h  box-h-icon box-h-space-above box-h-icon"> 
+    <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
+      <path d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z"></path>
+    </svg>
+    <h2>Help improve this page</h2>
+  </header>
+  <div class="box-i">
+  <p>Please share your ideas, suggestions, or comments via email to the publicly-archived list <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a> or via GitHub</p>
+    <div class="button-group">
+      <a href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D" class="button"><span>Email</span></a>
+      <a href="https://github.com/w3c/wcag/edit/main/understanding/22/target-size-minimum.html" class="button"><span>Fork &amp; Edit on GitHub</span></a>
+      <a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub Issue</span></a>
+    </div>
+  </div>
+</aside>
+
+</div>
+<footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+  <div class="inner" style="grid-column: 2 / 8">
+    <p>
+      <strong>Date:</strong> Updated 01 October 2025.
+      <a href="https://github.com/w3c/wcag/commits/main/understanding/22/target-size-minimum.html">View this page's revision history.</a></p>
+    <p><strong>Developed by</strong>
+      <a href="https://www.w3.org/groups/wg/ag/participants">Accessibility Guidelines Working Group (AG WG) Participants</a>
+      (Co-Chairs: Alastair Campbell, Rachael Bradley Montgomery. W3C Staff Contact:
+      Kevin White).
+    </p>
+    <p>The content was developed as part of the
+      <a href="https://www.w3.org/WAI/about/projects/#us">WAI-Core projects</a> funded by U.S. Federal funds.
+      The user interface was designed by the Education and Outreach Working Group
+      (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with contributions from
+      Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part of the
+      <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project,
+      co-funded by the European Commission.
+    </p>
+  </div>
+</footer>
+
+<footer class="w3c-global-footer wai-global-footer default-grid" aria-label="Site">
+  <div class="inner">
+    <div class="wai-global-footer__content">
+      <div class="wai-global-footer__subsite"><a href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></div>
+      <div class="wai-global-footer__subsite-desc">Strategies, standards, resources to make the Web accessible to people with disabilities</div>
+      <div class="wai-global-footer__cta w3c-l-cluster w3c-l-cluster--vertical-align">
+        <ul class="w3c-clean-list" role="list">
+          <li class="w3c-with-icon--before w3c-with-icon--larger">
+            <img class="w3c-icon w3c-icon--larger" src="https://www.w3.org/WAI/assets/images/email.svg" width="30" height="30" alt="" aria-hidden="true">
+            <a href="https://www.w3.org/WAI/news/subscribe/">Get News in Email</a>
+          </li>
+          <li class="w3c-with-icon--before w3c-with-icon--larger">
+            <img class="w3c-icon w3c-icon--larger" src="https://www.w3.org/WAI/assets/images/social/linkedin.svg" width="30" height="30" alt="" aria-hidden="true">
+            <a href="https://www.linkedin.com/company/w3c-wai/" translate="no">LinkedIn</a>
+          </li>
+          <li class="w3c-with-icon--before w3c-with-icon--larger">
+            <img class="w3c-icon w3c-icon--larger" src="https://www.w3.org/assets/website-2021/svg/mastodon.svg" width="30" height="30" alt="" aria-hidden="true">
+            <a href="https://w3c.social/@wai" translate="no">Mastodon</a>
+          </li>
+          <li class="w3c-with-icon--before w3c-with-icon--larger">
+            <img class="w3c-icon w3c-icon--larger" src="https://www.w3.org/WAI/assets/images/social/youtube.svg" width="30" height="30" alt="" aria-hidden="true">
+            <a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlists/" translate="no">YouTube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w3c-global-footer__links">
+      <div class="w3c-l-cluster">
+        <ul class="w3c-clean-list" role="list">
+          <li><a href="https://www.w3.org/WAI/">Home</a></li>
+          <li><a href="https://www.w3.org/WAI/about/contacting/">Contact</a></li>
+          <li><a href="https://www.w3.org/WAI/sitemap/">Site map</a></li>
+          <li><a href="https://www.w3.org/WAI/about/support/">Support WAI</a></li>
+          <li><a href="https://www.w3.org/WAI/news/">News</a></li>
+          <li><a href="https://www.w3.org/WAI/about/accessibility-statement/">Accessibility statement</a></li>
+          <li><a href="https://www.w3.org/WAI/translations/">All Translations</a></li>
+          <li><a href="https://www.w3.org/WAI/roles/">Resources for roles</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="w3c-copyright" translate="no">Copyright © 2026  <a href="https://www.w3.org/">World Wide Web	Consortium</a>.<br>
+      <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+      <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
+      <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software License">permissive license</a>
+      rules apply unless otherwise noted. See <a href="https://www.w3.org/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="a11y-light.css">
+<script>
+  var translationStrings = {}; // prevent errors in WAI main.js t() calls
+</script>
+<script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
+
+</body></html>

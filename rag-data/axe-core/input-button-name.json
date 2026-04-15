@@ -1,0 +1,37 @@
+{
+  "id": "input-button-name",
+  "impact": "critical",
+  "selector": "input[type=\"button\"], input[type=\"submit\"], input[type=\"reset\"]",
+  "matches": "no-explicit-name-required-matches",
+  "tags": [
+    "cat.name-role-value",
+    "wcag2a",
+    "wcag412",
+    "section508",
+    "section508.22.a",
+    "TTv5",
+    "TT5.c",
+    "EN-301-549",
+    "EN-9.4.1.2",
+    "ACT",
+    "RGAAv4",
+    "RGAA-11.9.1"
+  ],
+  "actIds": ["97a4e1"],
+  "metadata": {
+    "description": "Ensure input buttons have discernible text",
+    "help": "Input buttons must have discernible text"
+  },
+  "all": [],
+  "any": [
+    "non-empty-if-present",
+    "non-empty-value",
+    "aria-label",
+    "aria-labelledby",
+    "non-empty-title",
+    "implicit-label",
+    "explicit-label",
+    "presentational-role"
+  ],
+  "none": []
+}

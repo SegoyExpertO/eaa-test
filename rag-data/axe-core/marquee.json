@@ -1,0 +1,24 @@
+{
+  "id": "marquee",
+  "impact": "serious",
+  "selector": "marquee",
+  "excludeHidden": false,
+  "tags": [
+    "cat.parsing",
+    "wcag2a",
+    "wcag222",
+    "TTv5",
+    "TT2.b",
+    "EN-301-549",
+    "EN-9.2.2.2",
+    "RGAAv4",
+    "RGAA-13.8.1"
+  ],
+  "metadata": {
+    "description": "Ensure <marquee> elements are not used",
+    "help": "<marquee> elements are deprecated and must not be used"
+  },
+  "all": [],
+  "any": [],
+  "none": ["is-on-screen"]
+}

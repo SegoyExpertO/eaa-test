@@ -1,0 +1,15 @@
+{
+  "id": "presentation-role-conflict",
+  "impact": "minor",
+  "selector": "img[alt=''], [role=\"none\"], [role=\"presentation\"]",
+  "matches": "has-implicit-chromium-role-matches",
+  "tags": ["cat.aria", "best-practice", "ACT"],
+  "actIds": ["46ca7f"],
+  "metadata": {
+    "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+    "help": "Elements marked as presentational should be consistently ignored"
+  },
+  "all": [],
+  "any": [],
+  "none": ["is-element-focusable", "has-global-aria-attribute"]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "object-alt",
+  "impact": "serious",
+  "selector": "object[data]",
+  "matches": "object-is-loaded-matches",
+  "tags": [
+    "cat.text-alternatives",
+    "wcag2a",
+    "wcag111",
+    "section508",
+    "section508.22.a",
+    "EN-301-549",
+    "EN-9.1.1.1",
+    "RGAAv4",
+    "RGAA-1.1.6"
+  ],
+  "actIds": ["8fc3b6"],
+  "metadata": {
+    "description": "Ensure <object> elements have alternative text",
+    "help": "<object> elements must have alternative text"
+  },
+  "all": [],
+  "any": [
+    "aria-label",
+    "aria-labelledby",
+    "non-empty-title",
+    "presentational-role"
+  ],
+  "none": []
+}
