@@ -1,0 +1,64 @@
+services:
+
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: teaa-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U teaa -d teaa"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: teaa-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    environment:
+      - OLLAMA_KEEP_ALIVE=${OLLAMA_KEEP_ALIVE}
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 16g
+
+  teaa-rag:
+    build:
+      context: ./teaa-rag
+      dockerfile: Dockerfile
+    container_name: teaa-rag
+    ports:
+      - "8082:8082"
+    environment:
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_PORT: ${POSTGRES_PORT}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL}
+      RAG_DATA_PATH: ${RAG_DATA_PATH}
+    volumes:
+      - rag-data:/app/rag-data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  ollama-data:
+  rag-data:

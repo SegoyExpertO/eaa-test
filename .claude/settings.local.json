@@ -1,0 +1,84 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Email:', d.get\\('primaryEmail'\\) or d.get\\('email'\\) or 'не знайдено'\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(k,':',v\\) for k,v in d.items\\(\\) if 'key' not in k.lower\\(\\) and 'token' not in k.lower\\(\\) and 'secret' not in k.lower\\(\\)]\")",
+      "Bash(claude auth:*)",
+      "Bash(mvn compile:*)",
+      "Bash(docker --version)",
+      "Bash(ollama list:*)",
+      "Bash(docker compose up:*)",
+      "Bash(docker compose:*)",
+      "Bash(docker exec:*)",
+      "Bash(mvn package:*)",
+      "Bash(java -jar /home/experto/projects/teaa/teaa-rag/target/teaa-rag-1.0.0-SNAPSHOT.jar)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s http://localhost:8082/actuator/health)",
+      "Bash(curl -s http://localhost:8082/api/v1/rag/ingest/sources)",
+      "Bash(python3 -m json.tool)",
+      "Bash(kill 11100)",
+      "Bash(tee /tmp/teaa-rag-final.log)",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(curl -s -X POST http://localhost:11434/api/embed -d '{\"model\":\"nomic-embed-text\",\"input\":\"test accessibility\"}')",
+      "Bash(pkill -f \"teaa-rag.*SNAPSHOT.jar\")",
+      "Bash(claude --version)",
+      "Bash(npm outdated:*)",
+      "Bash(npm view:*)",
+      "Bash(claude doctor:*)",
+      "Bash(mvn clean *)",
+      "Bash(java *)",
+      "Bash(kill 5315 *)",
+      "Bash(docker-compose ps:*)",
+      "Bash(lsof -ti:8082)",
+      "Bash(ps -p 6871 -o pid,cmd)",
+      "Bash(kill 6871)",
+      "Bash(psql \"postgresql://teaa:teaa@localhost:5432/teaa\" -c \"SELECT metadata->>'source' AS source, COUNT\\(*\\) as chunks FROM rag.knowledge_chunks GROUP BY metadata->>'source' ORDER BY source;\")",
+      "Bash(curl -s -X POST http://localhost:8082/api/v1/rag/ingest/wcag)",
+      "Bash(pkill -f teaa-rag-1.0.0-SNAPSHOT.jar)",
+      "Bash(jar tf:*)",
+      "Bash(jar xf:*)",
+      "Bash(javap -p org/springframework/ai/autoconfigure/ollama/OllamaConnectionProperties.class)",
+      "Bash(javap -p org/springframework/ai/autoconfigure/ollama/OllamaAutoConfiguration.class)",
+      "Bash(javap -p org/springframework/ai/ollama/api/OllamaApi.class)",
+      "Bash(xargs -I{} ls -la /proc/{}/cwd)",
+      "Bash(grep -v \"//\\\\s*$\")",
+      "Bash(grep -v \"^\\\\s*\\\\*\\\\s*$\")",
+      "Bash(curl -s http://localhost:8080/api/v1/rag/ingest/sources)",
+      "Bash(ls /home/experto/projects/teaa/teaa-rag/target/*.jar)",
+      "Bash(fuser -k 8082/tcp)",
+      "Bash(curl -s -X POST http://localhost:8082/api/v1/rag/ingest/axe-core)",
+      "Bash(wait)",
+      "Bash(curl -s -X POST http://localhost:8082/api/v1/rag/ingest/en301549)",
+      "Bash(docker network:*)",
+      "Bash(curl -s -X POST http://localhost:8082/api/v1/rag/ingest/tizen)",
+      "Bash(curl -s -L \"https://docs.tizen.org/application/web/guides/accessibility/\" -o /tmp/tizen-test.html)",
+      "Bash(echo \"Status: $?\")",
+      "Bash(curl -s -I \"https://docs.tizen.org/application/web/guides/ui/tau/accessibility/\")",
+      "Bash(curl -s -I \"https://docs.tizen.org/application/web/guides/ui/accessibility/\")",
+      "Bash(curl -s -L \"https://docs.tizen.org/application/web/guides/\")",
+      "Bash(python3 -c ':*)",
+      "Bash(curl -s -I \"https://docs.tizen.org/application/web/guides/w3c/ui/accessibility/\")",
+      "Bash(curl -s -I \"https://docs.tizen.org/application/dotnet/guides/uix/tts/\")",
+      "Bash(curl -s -I \"https://developer.samsung.com/smarttv/develop/guides/user-interaction/accessibility.html\")",
+      "Bash(curl -s -I \"https://developer.samsung.com/smarttv/develop/accessibility.html\")",
+      "Bash(curl -s -I \"https://developer.samsung.com/smarttv/develop/guides/accessibility/\")",
+      "Bash(curl -s -I \"https://docs.tizen.org/application/dotnet/guides/uix/overview/\")",
+      "Bash(curl -s -L \"https://docs.tizen.org/application/dotnet/guides/uix/overview/\")",
+      "Bash(curl -s -L \"https://developer.samsung.com/smarttv/develop/guides/\")",
+      "Bash(docker run:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/post-tool-call.py"
+          }
+        ]
+      }
+    ]
+  }
+}

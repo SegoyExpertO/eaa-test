@@ -1,0 +1,72 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: teaa-rag
+
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:teaa}
+    username: ${POSTGRES_USER:teaa}
+    password: ${POSTGRES_PASSWORD:teaa}
+
+  r2dbc:
+    url: r2dbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:teaa}
+    username: ${POSTGRES_USER:teaa}
+    password: ${POSTGRES_PASSWORD:teaa}
+
+  ai:
+    ollama:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+      chat:
+        options:
+          model: ${OLLAMA_CHAT_MODEL:qwen2.5:14b}
+          temperature: 0.1
+          num-ctx: 8192
+      embedding:
+        options:
+          model: ${OLLAMA_EMBEDDING_MODEL:nomic-embed-text}
+
+    vectorstore:
+      pgvector:
+        dimensions: 768
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        schema-name: rag
+        table-name: knowledge_chunks
+        initialize-schema: true
+
+teaa:
+  rag:
+    ingest:
+      auto-ingest-on-startup: true
+      chunk-size: 800
+      chunk-overlap: 200
+      local-data-path: ${RAG_DATA_PATH:./rag-data}
+    query:
+      top-k: 12
+      similarity-threshold: 0.7
+
+  fetcher:
+    wcag:
+      base-url: https://www.w3.org/TR/WCAG22/
+      understanding-url: https://www.w3.org/WAI/WCAG22/Understanding/
+      techniques-url: https://www.w3.org/WAI/WCAG22/Techniques/
+    axe-core:
+      github-api-url: https://api.github.com/repos/dequelabs/axe-core
+      raw-base-url: https://raw.githubusercontent.com/dequelabs/axe-core/develop
+    en301549:
+      pdf-url: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
+    tizen:
+      docs-url: https://developer.samsung.com/smarttv
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+logging:
+  level:
+    ua.teaa: DEBUG
+    org.springframework.ai: INFO
